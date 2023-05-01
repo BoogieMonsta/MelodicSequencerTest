@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { el } from '@elemaudio/core';
-import WebAudioRenderer from '@elemaudio/web-renderer';
+import WebRenderer from '@elemaudio/web-renderer';
 import { Note } from './models/Note';
 import { NoteNames } from './models/NoteNames';
 import { Step } from './models/Step';
 
-const core = new WebAudioRenderer();
+const core = new WebRenderer();
 
 const OFF = el.const({ value: 0 });
 
